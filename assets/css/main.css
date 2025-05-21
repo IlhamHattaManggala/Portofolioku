@@ -1280,6 +1280,33 @@ section,
   color: var(--accent-color);
 }
 
+.project-item .card {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Ganti jumlah baris sesuai kebutuhan */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.project-item .card-img-top {
+  height: 200px; /* Sesuaikan tinggi gambar */
+  object-fit: cover;
+}
+
+.project-item .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
